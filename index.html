@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div>
+        <h1>
+            signup from
+        </h1>
+        <form onsubmit="signup (event)">
+            <input type="text"  style="height: 40px; width: 300px; margin-right: 00px;margin-top: 20px; border: 2px solid black;border-radius: 7px; "placeholder="Enter your email" id="email">
+            <br>
+            <input type="password"  style="height: 40px; width: 300px; margin-top: 40px; border: 2px solid black; border-radius: 7px;" name="" id="password">
+            <br>
+
+            <button type="submit"  style="height: 40px; width: 200px; margin-top: 50px;  background: linear-gradient(to bottom,#8982db,#685ce6, #242432); border: 2px solid black;" >submit</button>
+            
+        </form>
+    </div>
+    <div>
+        <br>
+    
+        <h1>
+            Login
+            </h1>
+        <form onsubmit="Login (event)">
+            <input type="text"  style="height: 40px; width: 300px; margin-right: 00px;margin-top: 20px; border: 2px solid black;border-radius: 7px; "placeholder="Enter your email" id="login_email">
+            <input type="password"  style="height: 40px; width: 300px; margin-top: 40px; border: 2px solid black;border-radius: 7px;" name="" id="login_password">
+            <button type="submit"  style="height: 40px; width: 100px; margin-top: 50px; background-color:rgba(216, 159, 112, 0.644); border: 2px solid black;">login</button>
+            <button onclick="logout()" style="height: 40px; width: 100px; margin-top: 50px; background-color:rgb(17, 0, 255); border: 2px solid black;">Logout</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+   
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+
+    <script>
+    
+         const firebaseConfig = {
+    apiKey: "AIzaSyCK7IP-To1MFRVdg4x-as_qDdBIxT3mEJA",
+    authDomain: "app-appp.firebaseapp.com",
+    projectId: "app-appp",
+    storageBucket: "app-appp.appspot.com",
+    messagingSenderId: "753608357188",
+    appId: "1:753608357188:web:8eacaa77b772713ca69311"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    
+ 
+    </script>
+</body>
+</html>
